@@ -1,9 +1,9 @@
 import type { AppProps } from "next/app";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
-import store from "../store";
+import store from "store";
 import { Provider } from "react-redux";
-import { NavigationPath } from "../models/enum";
-import Home from "./home/home";
+import { NavigationPath } from "models/enum";
+import Home from "pages/home/home";
 import Link from "next/link";
 
 // 2. Extend the theme to include custom colors, fonts, etc

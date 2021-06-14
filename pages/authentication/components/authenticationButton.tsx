@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 
-import IStoreState from "../../../store/IStoreState";
-import { IAuthenticationState } from "../stateManagement/state";
-import { getToken } from "../stateManagement/thunks";
+import IStoreState from "store/IStoreState";
+import { IAuthenticationState } from "pages/authentication/stateManagement/state";
+import { getToken } from "pages/authentication/stateManagement/thunks";
 import { Button, Container } from "@chakra-ui/react";
 
 interface IAuthenticationDispathProps {

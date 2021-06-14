@@ -1,0 +1,5 @@
+{
+    "appRedirectUri": "http://localhost:3000/",
+    "appApiHostname": "localhost",
+    "appApiUrl": "https://localhost:44306/api/"
+}

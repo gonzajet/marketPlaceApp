@@ -1,8 +1,7 @@
 import Head from 'next/head'
-import styles from '../../styles/Home.module.css'
+import styles from 'styles/Home.module.css'
 import { useRouter } from 'next/router';
-import { Button } from '@chakra-ui/react'
-import AuthenticationButton from '../authentication/components/authenticationButton';
+import AuthenticationButton from 'pages/authentication/components/authenticationButton';
 
 export default function Home({href }: any) {
   const router = useRouter();

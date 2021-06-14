@@ -1,6 +1,6 @@
 import { ThunkAction } from 'redux-thunk';
 
-import IStoreState from '../../../store/IStoreState';
+import IStoreState from 'store/IStoreState';
 import { getToken as getUserToken } from './api';
 import { Actions } from './actions';
 import { actionTriggers } from './actionsCreators';
