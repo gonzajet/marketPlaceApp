@@ -4,7 +4,9 @@ export enum Language {
 }
 
 export enum NavigationPath {
+    layout = "/",
     home = "/home",
+    product = "/product",
     productDetail = "/product/[productId]",
     pageNotFound = "/pageNotFound"
 }

@@ -1,10 +1,8 @@
 import type { AppProps } from "next/app";
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import store from "store";
+import { ToastContainer } from "react-toastify";
 import { Provider } from "react-redux";
-import { NavigationPath } from "models/enum";
-import Home from "pages/home/home";
-import Link from "next/link";
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
@@ -16,19 +14,14 @@ const colors = {
 };
 const theme = extendTheme({ colors });
 
-function MyApp({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   return (
     <Provider store={store}>
       <ChakraProvider theme={theme}>
-        <Link href={NavigationPath.home}>
-          <Home />
-        </Link>
-        <Link href={{pathname: `/product/${'1234'}`}}>
-          <a>Test product id</a>
-        </Link>
-        {/* <Component {...pageProps} /> */}
+        <Component {...pageProps} />
+        <ToastContainer limit={2} />
       </ChakraProvider>
     </Provider>
   );
 }
-export default MyApp;
+export default App;

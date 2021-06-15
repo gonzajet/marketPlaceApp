@@ -7,7 +7,7 @@ import { configurationVariables } from 'pages/configurationVariables/stateManage
 
 import IStoreState from './IStoreState';
 
-// ADD REDUCERS
+// ADD MORE REDUCERS
 const reducers = combineReducers<IStoreState>({
     authentication,
     configurationVariables,
